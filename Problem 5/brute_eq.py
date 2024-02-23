@@ -3,7 +3,7 @@ Complete the python code to find the solution to the system of linear equations 
 The equations are of the form ax + by = c and dx + ey = f. The solution should be printed in the form x = # and y = #. 
 If there is no solution, print "There is no solution".
 
-Name:
+Name: Nhi Tran
 Lab Time:
 """
 
@@ -18,7 +18,17 @@ def brute_eq():
     e = int(input())
     f = int(input())
 
-    # YOUR CODE HERE
+    check == False
+
+    for x in range (-10, 10,1):
+        for y in range(-10,10,1):
+            if a * x + b * y == c and d * x + e * y == f:
+                check = True
+                print("x = {}, and y = {}".format(x,y))
+    if check == False:
+        print('There is no solution')
+        
+    
     
 if __name__ == "__main__":
     brute_eq()
