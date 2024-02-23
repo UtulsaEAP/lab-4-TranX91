@@ -14,6 +14,7 @@ def norm():
     max_num = max(num_list)
 
     for num in num_list:
+        
         final_num = num / max_num
         print(f'{final_num:.2f}')
 
